@@ -33,12 +33,12 @@ app.controller('LoginController', function($scope, $http) {
     /* This function will be called from the google api after the user clicks
        `accepd' or `cancel' in the popup window.
        The function will also be called if an already logged in user visits the
-       page.
-       TODO: properly implement like in http://stackoverflow.com/a/9857988/649835 */
+       page. */
     $scope.onSignInCallback = function(data) {
         /* User clicked `cancel' or simply closed the popup. */
         if ('undefined' != typeof data.error) {
             console.log('siginin canceled');
+            return;
         }
         /* Init the javascript client, try to load user data and promote login
            to the server */
