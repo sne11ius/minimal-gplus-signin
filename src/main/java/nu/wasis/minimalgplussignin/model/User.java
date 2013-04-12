@@ -5,25 +5,15 @@ import com.github.jmkgreen.morphia.annotations.Embedded;
 @Embedded
 public class User {
 
-    private String email;
     private String firstname;
     private String lastname;
 
     public User() {
     }
 
-    public User(final String email, final String firstname, final String lastname) {
-        this.email = email;
+    public User(final String firstname, final String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(final String email) {
-        this.email = email;
     }
 
     public String getFirstname() {

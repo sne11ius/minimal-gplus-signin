@@ -4,9 +4,6 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import nu.wasis.minimalgplussignin.exception.IllegalDataException;
-import nu.wasis.minimalgplussignin.exception.NotAllowedException;
-
 import org.apache.log4j.Logger;
 
 import com.sun.jersey.api.NotFoundException;
@@ -20,12 +17,6 @@ public class DefaultExceptionMapper implements ExceptionMapper<Throwable> {
     public Response toResponse(final Throwable e) {
         if (e instanceof NotFoundException) {
             return buildResponse(404, e);
-        }
-        if (e instanceof NotAllowedException) {
-            return buildResponse(403, e);
-        }
-        if (e instanceof IllegalDataException) {
-            return buildResponse(400, e);
         }
         LOG.debug("Mapping unknown Exception of class: " + e.getClass().getName());
         LOG.debug(e);
