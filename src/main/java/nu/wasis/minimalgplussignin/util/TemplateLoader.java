@@ -1,4 +1,4 @@
-package nu.wasis.jlog.util;
+package nu.wasis.minimalgplussignin.util;
 
 import java.io.File;
 import java.io.FileInputStream;

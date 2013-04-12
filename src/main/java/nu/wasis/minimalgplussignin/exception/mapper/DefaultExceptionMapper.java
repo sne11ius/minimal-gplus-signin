@@ -1,11 +1,11 @@
-package nu.wasis.jlog.exception.mapper;
+package nu.wasis.minimalgplussignin.exception.mapper;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import nu.wasis.jlog.exception.IllegalDataException;
-import nu.wasis.jlog.exception.NotAllowedException;
+import nu.wasis.minimalgplussignin.exception.IllegalDataException;
+import nu.wasis.minimalgplussignin.exception.NotAllowedException;
 
 import org.apache.log4j.Logger;
 

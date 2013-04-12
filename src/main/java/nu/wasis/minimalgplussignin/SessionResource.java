@@ -1,4 +1,4 @@
-package nu.wasis.jlog;
+package nu.wasis.minimalgplussignin;
 
 import java.io.IOException;
 
@@ -11,8 +11,8 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import nu.wasis.jlog.util.GPlusUtils;
-import nu.wasis.jlog.util.PrivateConstants;
+import nu.wasis.minimalgplussignin.util.GPlusUtils;
+import nu.wasis.minimalgplussignin.util.PrivateConstants;
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeTokenRequest;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;

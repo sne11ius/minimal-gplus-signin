@@ -1,4 +1,4 @@
-package nu.wasis.jlog;
+package nu.wasis.minimalgplussignin;
 
 import java.io.IOException;
 import java.net.URI;
@@ -38,7 +38,7 @@ public class JLog {
     // Init and run Grizzly server
     protected static HttpServer startServer() throws IOException {
         final Map<String, String> initParams = new HashMap<String, String>();
-        initParams.put("com.sun.jersey.config.property.packages", "nu.wasis.jlog;org.codehaus.jackson.jaxrs");
+        initParams.put("com.sun.jersey.config.property.packages", "nu.wasis.minimalgplussignin;org.codehaus.jackson.jaxrs");
         initParams.put("com.sun.jersey.api.json.POJOMappingFeature", "true");
         return GrizzlyWebContainerFactory.create(BASE_URI, initParams);
     }

@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nu.wasis</groupId>
-	<artifactId>jlog</artifactId>
+	<artifactId>minimalgplussignin</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jlog</name>
@@ -141,7 +141,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>nu.wasis.jlog.JLog</mainClass>
+							<mainClass>nu.wasis.minimalgplussignin.JLog</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

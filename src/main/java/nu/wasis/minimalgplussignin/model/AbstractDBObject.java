@@ -1,4 +1,4 @@
-package nu.wasis.jlog.model;
+package nu.wasis.minimalgplussignin.model;
 
 import org.bson.types.ObjectId;
 

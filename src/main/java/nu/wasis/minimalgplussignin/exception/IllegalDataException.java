@@ -1,4 +1,4 @@
-package nu.wasis.jlog.exception;
+package nu.wasis.minimalgplussignin.exception;
 
 /**
  * Wird verwendet, wenn ungueltige Daten geposted werden.

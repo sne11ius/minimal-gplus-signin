@@ -2,7 +2,7 @@
 /* *******************************************
  * Copyright 2010-2012, Anthony Hand
  */
-package nu.wasis.jlog.util;
+package nu.wasis.minimalgplussignin.util;
 
 /**
  * The DetectSmartPhone class encapsulates information about a browser's connection to your web site. You can use it to

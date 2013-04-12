@@ -1,10 +1,10 @@
-package nu.wasis.jlog.util;
+package nu.wasis.minimalgplussignin.util;
 
 import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 
-import nu.wasis.jlog.model.User;
+import nu.wasis.minimalgplussignin.model.User;
 
 import org.apache.log4j.Logger;
 import org.bson.types.ObjectId;

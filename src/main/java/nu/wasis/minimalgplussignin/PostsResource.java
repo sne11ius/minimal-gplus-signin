@@ -1,4 +1,4 @@
-package nu.wasis.jlog;
+package nu.wasis.minimalgplussignin;
 
 import java.util.List;
 
@@ -13,12 +13,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
-import nu.wasis.jlog.exception.IllegalDataException;
-import nu.wasis.jlog.exception.NotAllowedException;
-import nu.wasis.jlog.model.Comment;
-import nu.wasis.jlog.model.Post;
-import nu.wasis.jlog.service.PostService;
-import nu.wasis.jlog.util.GPlusUtils;
+import nu.wasis.minimalgplussignin.exception.IllegalDataException;
+import nu.wasis.minimalgplussignin.exception.NotAllowedException;
+import nu.wasis.minimalgplussignin.model.Comment;
+import nu.wasis.minimalgplussignin.model.Post;
+import nu.wasis.minimalgplussignin.service.PostService;
+import nu.wasis.minimalgplussignin.util.GPlusUtils;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang.StringUtils;

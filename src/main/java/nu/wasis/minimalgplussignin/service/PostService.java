@@ -1,13 +1,13 @@
-package nu.wasis.jlog.service;
+package nu.wasis.minimalgplussignin.service;
 
 import java.util.Collections;
 import java.util.List;
 
-import nu.wasis.jlog.model.Comment;
-import nu.wasis.jlog.model.Post;
-import nu.wasis.jlog.util.Constants;
-import nu.wasis.jlog.util.MongoUtils;
-import nu.wasis.jlog.util.PostDateComparator;
+import nu.wasis.minimalgplussignin.model.Comment;
+import nu.wasis.minimalgplussignin.model.Post;
+import nu.wasis.minimalgplussignin.util.Constants;
+import nu.wasis.minimalgplussignin.util.MongoUtils;
+import nu.wasis.minimalgplussignin.util.PostDateComparator;
 
 import org.apache.log4j.Logger;
 import org.bson.types.ObjectId;

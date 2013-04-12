@@ -1,4 +1,4 @@
-package nu.wasis.jlog.exception;
+package nu.wasis.minimalgplussignin.exception;
 
 public class NotAllowedException extends RuntimeException {
 

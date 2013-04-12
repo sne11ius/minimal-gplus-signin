@@ -1,4 +1,4 @@
-package nu.wasis.jlog;
+package nu.wasis.minimalgplussignin;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,10 +20,10 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
-import nu.wasis.jlog.util.GPlusUtils;
-import nu.wasis.jlog.util.PrivateConstants;
-import nu.wasis.jlog.util.TemplateLoader;
-import nu.wasis.jlog.util.UserAgentInfo;
+import nu.wasis.minimalgplussignin.util.GPlusUtils;
+import nu.wasis.minimalgplussignin.util.PrivateConstants;
+import nu.wasis.minimalgplussignin.util.TemplateLoader;
+import nu.wasis.minimalgplussignin.util.UserAgentInfo;
 
 import org.apache.log4j.Logger;
 

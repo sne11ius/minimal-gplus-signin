@@ -1,8 +1,8 @@
-package nu.wasis.jlog.util;
+package nu.wasis.minimalgplussignin.util;
 
 import java.util.Comparator;
 
-import nu.wasis.jlog.model.Post;
+import nu.wasis.minimalgplussignin.model.Post;
 
 public class PostDateComparator implements Comparator<Post> {
 
