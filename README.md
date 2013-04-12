@@ -1,5 +1,5 @@
-Blog
-====
+Minimal GPlus Signin
+====================
 
 Simple gplus login.
 

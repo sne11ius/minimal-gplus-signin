@@ -141,7 +141,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>nu.wasis.minimalgplussignin.JLog</mainClass>
+							<mainClass>nu.wasis.minimalgplussignin.MinimalGPlusSignin</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
