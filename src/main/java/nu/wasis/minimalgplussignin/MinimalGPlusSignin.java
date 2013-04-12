@@ -15,7 +15,7 @@ public class MinimalGPlusSignin {
 
     // We only want relative urls in the JAX-RS definitions, so put the absolute
     // part here.
-    private static final String URL_PREFIX = "mit/blog";
+    private static final String URL_PREFIX = "mit/minimal-gplus-signin";
 
     // The base URI used by this application.
     public static final URI BASE_URI = getBaseURI();
