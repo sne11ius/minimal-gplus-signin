@@ -23,17 +23,6 @@
 			<version>${jersey-version}</version>
 		</dependency>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.8.2</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>2.10.1</version>
-		</dependency>
-		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
 			<version>2.3.19</version>
@@ -76,16 +65,6 @@
 			<groupId>com.google.apis</groupId>
 			<artifactId>google-api-services-plus</artifactId>
 			<version>v1-rev54-1.13.2-beta</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.jmkgreen.morphia</groupId>
-			<artifactId>morphia</artifactId>
-			<version>1.2.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.jmkgreen.morphia</groupId>
-			<artifactId>morphia-logging-slf4j</artifactId>
-			<version>1.2.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>

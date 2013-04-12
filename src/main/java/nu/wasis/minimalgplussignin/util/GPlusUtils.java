@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import nu.wasis.minimalgplussignin.model.User;
 
 import org.apache.log4j.Logger;
-import org.bson.types.ObjectId;
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse;
@@ -38,9 +37,7 @@ public class GPlusUtils {
      */
     public static final Gson GSON;
     static {
-        final GsonBuilder gb = new GsonBuilder();
-        gb.registerTypeAdapter(ObjectId.class, new ObjectIdGsonAdapter()); // nice object ids
-        GSON = gb.create();
+        GSON = new GsonBuilder().create();
     }
 
     public static boolean isLoggedIn(final HttpServletRequest request) {
