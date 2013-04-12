@@ -47,10 +47,6 @@ public class GPlusUtils {
         return null != request.getSession().getAttribute("token");
     }
 
-    public static boolean isOwnerLoggedIn(final HttpServletRequest request) {
-        return getCurrentUserId(request).equals(PrivateConstants.OWNER_ID);
-    }
-
     public static String getCurrentUserId(final HttpServletRequest request) {
         final String tokenData = (String) request.getSession().getAttribute("token");
         if (tokenData == null) {
@@ -99,43 +95,11 @@ public class GPlusUtils {
         }
     }
 
-    /*
-     * frist: add direct to post urls, then share them
-     */
-    // private static void addMoment(final String tokenData) throws IOException {
-    // final GoogleCredential credential = new GoogleCredential.Builder().setJsonFactory(JSON_FACTORY)
-    // .setTransport(TRANSPORT)
-    // .setClientSecrets(PrivateConstants.CLIENT_ID,
-    // PrivateConstants.CLIENT_SECRET)
-    // .build()
-    // .setFromTokenResponse(JSON_FACTORY.fromString(tokenData,
-    // GoogleTokenResponse.class));
-    // final Plus service = new Plus.Builder(TRANSPORT, JSON_FACTORY,
-    // credential).setApplicationName(PrivateConstants.APPLICATION_NAME)
-    // .build();
-    // // This sample assumes a client object has been created.
-    // // To learn more about creating a client, check out the starter:
-    // // https://developers.google.com/+/quickstart/java
-    //
-    // // This example shows how to create a moment that is associated with a URL that has schema.org markup.
-    // final Moment moment = new Moment();
-    // moment.setType("http://schemas.google.com/AddActivity");
-    // final ItemScope itemScope = new ItemScope();
-    // itemScope.setUrl("https://developers.google.com/+/plugins/snippet/examples/thing");
-    // moment.setTarget(itemScope);
-    // final Moment momentResult = service.moments().insert("me", "vault", moment).execute();
-    // }
-
     private static Person getCurrentGPlusUser(final String tokenData) throws IOException {
-        final GoogleCredential credential = new GoogleCredential.Builder().setJsonFactory(JSON_FACTORY)
-                                                                          .setTransport(TRANSPORT)
-                                                                          .setClientSecrets(PrivateConstants.CLIENT_ID,
-                                                                                            PrivateConstants.CLIENT_SECRET)
-                                                                          .build()
-                                                                          .setFromTokenResponse(JSON_FACTORY.fromString(tokenData,
-                                                                                                                        GoogleTokenResponse.class));
-        final Plus service = new Plus.Builder(TRANSPORT, JSON_FACTORY, credential).setApplicationName(PrivateConstants.APPLICATION_NAME)
-                                                                                  .build();
+        final GoogleCredential credential = new GoogleCredential.Builder().setJsonFactory(JSON_FACTORY).setTransport(TRANSPORT)
+                                                                          .setClientSecrets(PrivateConstants.CLIENT_ID, PrivateConstants.CLIENT_SECRET).build()
+                                                                          .setFromTokenResponse(JSON_FACTORY.fromString(tokenData, GoogleTokenResponse.class));
+        final Plus service = new Plus.Builder(TRANSPORT, JSON_FACTORY, credential).setApplicationName(PrivateConstants.APPLICATION_NAME).build();
         final Person me = service.people().get("me").execute();
         return me;
     }
