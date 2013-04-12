@@ -89,7 +89,7 @@ app.controller('LoginController', function($scope, $http) {
 });
 
 /*******************************************************************************
- * Define what we want to the if the app is `run'...
+ * Define what we want to do if the app is `run'...
  */
 app.run(function() {
     // nothing to do
