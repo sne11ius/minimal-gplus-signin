@@ -75,7 +75,7 @@ app.controller('LoginController', function($scope, $http) {
                 'accesstype'            : 'offline',
                 'callback'              : $scope.onSignInCallback,
                 'theme'                 : 'light',
-                'width'                 : 'iconOnly',
+                'width'                 : 'medium',
                 'cookiepolicy'          : 'single_host_origin'
             }
         );
