@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>wasis.nu/mit/minimal-gplus-signin</title>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
     <script>
 <#include "app.js">

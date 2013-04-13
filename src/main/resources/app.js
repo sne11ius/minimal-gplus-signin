@@ -51,18 +51,14 @@ app.controller('LoginController', function($scope, $http) {
                     console.log('this is not login you are looking for...');
                     return;
                 }
-                $.ajax({
-                    type : 'POST',
-                    url : window.location.href + '/session/connect?state=${state}&gplus_id=' + profile.id,
-                    contentType : 'application/octet-stream; charset=utf-8',
-                    /* Update the view on success */
-                    success : function(loginInfo) {
-                        $scope.$apply(function() {
-                            $scope.isLoggedIn = true;
-                            $scope.username = loginInfo.user.firstname + ' ' + loginInfo.user.lastname;
-                        });
-                    },
-                    data : data.code
+                $http({
+                    method: 'POST',
+                    url: window.location.href + '/session/connect?state=${state}&gplus_id=' + profile.id,
+                    headers: {'Content-Type': 'application/octet-stream; charset=utf-8'},
+                    data: data.code 
+                }).success(function(loginInfo) {
+                    $scope.isLoggedIn = true;
+                    $scope.username = loginInfo.user.firstname + ' ' + loginInfo.user.lastname;
                 });
             });
         });
