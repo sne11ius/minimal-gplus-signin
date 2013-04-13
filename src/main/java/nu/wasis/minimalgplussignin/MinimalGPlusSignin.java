@@ -32,7 +32,7 @@ public class MinimalGPlusSignin {
     }
 
     private static URI getBaseURI() {
-        return UriBuilder.fromUri("http://localhost/" + URL_PREFIX).port(getPort(4567)).build();
+        return UriBuilder.fromUri("http://localhost/" + URL_PREFIX).port(getPort(7654)).build();
     }
 
     // Init and run Grizzly server

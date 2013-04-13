@@ -26,7 +26,7 @@ import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
 /**
- * Renders the html/index.ftl file.
+ * Renders the index.ftl file.
  */
 @Path("/")
 public class IndexResource {
@@ -51,7 +51,6 @@ public class IndexResource {
     private Template getTemplate() throws IOException {
         final Configuration configuration = new Configuration();
         final File templateDir = new File("./target/classes");
-        LOG.debug("Template dir: " + templateDir.getAbsolutePath());
         configuration.setDirectoryForTemplateLoading(templateDir);
         final Template template = configuration.getTemplate("index.ftl");
         return template;
